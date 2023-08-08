@@ -16,7 +16,7 @@ return (NULL);
 }
 temp = (*head);
 new->n = number;
-if (number < head->n)
+if (number < (*head)->n)
 {
 new->next = (*head);
 (*head) = new;
