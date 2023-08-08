@@ -22,13 +22,13 @@ new->next = (*head);
 (*head) = new;
 return (new);
 }
-if (head == NULL)
+if (temp == NULL)
 {
-new->next = NULL;
+new->next = temp;
 (*head) = new;
 return (new);
 }
-while ((temp->n > number || temp->next->n < number) && temp)
+while (temp && temp->next->n < number && temp)
 {
 temp = temp->next;
 }
