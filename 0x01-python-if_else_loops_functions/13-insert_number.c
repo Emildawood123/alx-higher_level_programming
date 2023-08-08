@@ -22,6 +22,11 @@ new->next = (*head);
 (*head) = new;
 return (new);
 }
+if ((*head) == NULL)
+{
+(*head) = new;
+return (new);
+}
 while (temp->n > number || temp->next->n < number)
 {
 temp = temp->next;
