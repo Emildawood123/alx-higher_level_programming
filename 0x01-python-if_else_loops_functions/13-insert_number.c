@@ -16,16 +16,16 @@ return (NULL);
 }
 temp = (*head);
 new->n = number;
-if (number < temp->n)
+if (number < (*head)->n)
 {
-new->next = temp;
-temp = new;
+new->next = (*head);
+(*head) = new;
 return (new);
 }
-if (temp == NULL)
+if (head == NULL)
 {
-new = temp;
-temp = new;
+new->next = NULL;
+(*head) = new;
 return (new);
 }
 while ((temp->n > number || temp->next->n < number) && temp)
