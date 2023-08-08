@@ -5,4 +5,4 @@ def print_last_digit(number):
     while number > 10:
         number = number % 10
     print(f"{number}", end='')
-    return(number)
+    return (number)
