@@ -24,10 +24,11 @@ return (new);
 }
 if ((*head) == NULL)
 {
+new = (*head);
 (*head) = new;
 return (new);
 }
-while (temp->n > number || temp->next->n < number)
+while ((temp->n > number || temp->next->n < number) && temp)
 {
 temp = temp->next;
 }
