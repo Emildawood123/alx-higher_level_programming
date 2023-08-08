@@ -16,6 +16,12 @@ return (NULL);
 }
 temp = (*head);
 new->n = number;
+if (number < head->n)
+{
+new->next = (*head);
+(*head) = new;
+return (new);
+}
 while (temp->n > number || temp->next->n < number)
 {
 temp = temp->next;
