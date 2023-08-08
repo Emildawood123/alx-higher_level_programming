@@ -28,7 +28,7 @@ new->next = temp;
 (*head) = new;
 return (new);
 }
-while (temp && temp->next->n < number && temp)
+while (temp->next && temp->next->n < number && temp)
 {
 temp = temp->next;
 }
