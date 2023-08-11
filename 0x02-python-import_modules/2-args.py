@@ -5,6 +5,7 @@ if __name__ == "__main__":
     if (len(sys.argv) == 1):
         print("0 arguments.")
     else:
+        print("{} arguments:", len(sys.argv) - 1)
         for i in sys.argv:
             if (count == 0):
                 count += 1
