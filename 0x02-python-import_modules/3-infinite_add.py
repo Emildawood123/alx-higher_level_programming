@@ -11,4 +11,5 @@ if __name__ == "__main__":
                 count += 1
                 continue
             res += int(sys.argv[count])
+            count += 1
         print("{}".format(res))
