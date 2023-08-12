@@ -1,5 +1,10 @@
 #include <stdio.h>
 #include <Python.h>
+/**
+ * print_python_list_info - function pring list of python
+ * @p: this the object
+ * Return: void
+ */
 void print_python_list_info(PyObject *p)
 {
 long int Size;
