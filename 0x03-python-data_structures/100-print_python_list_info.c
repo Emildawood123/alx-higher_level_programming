@@ -11,7 +11,7 @@ int i = 0;
 PyObject *object;
 size = Py_SIZE(p);
 printf("[*] Size of the Python List = %d\n", size);
-printf("[*] Allocated = %d\n", ((PyListObject *)p)->allocated);
+printf("[*] Allocated = %ld\n", ((PyListObject *)p)->allocated);
 while (i < size)
 {
 printf("Element %d: ", i);
