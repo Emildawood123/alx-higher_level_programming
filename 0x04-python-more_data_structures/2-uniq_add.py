@@ -10,4 +10,3 @@ def uniq_add(my_list=[]):
     for j in new:
         res = res + j
     return (res)
-
