@@ -7,4 +7,3 @@ def complex_delete(a_dictionary, value):
     for key in ar:
         a_dictionary.pop(key)
     return (a_dictionary)
-
