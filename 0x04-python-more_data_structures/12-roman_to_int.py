@@ -10,7 +10,7 @@ def roman_to_int(roman_string):
         'M': 1000
     }
     res = 0
-    if (type(roman_string) != str):
+    if (type(roman_string) != str or roman_string == None):
         return 0
     else:
         last = roman_dic[roman_string[len(roman_string) - 1]]
