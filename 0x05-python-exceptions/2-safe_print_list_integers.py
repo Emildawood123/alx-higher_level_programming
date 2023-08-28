@@ -2,7 +2,7 @@
 def safe_print_list_integers(my_list=[], x=0):
     count = 0
     count2 = 0
-    while (count < my_list):
+    while (count + count2 < my_list):
         try:
             print("{:d}".format(my_list[count + count2]), end="")
             count += 1
