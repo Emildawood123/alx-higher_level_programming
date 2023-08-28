@@ -2,9 +2,9 @@
 def safe_print_list_integers(my_list=[], x=0):
     count = 0
     count2 = 0
-    while (count + count2 < my_list):
+    for e in my_list:
         try:
-            print("{:d}".format(my_list[count + count2]), end="")
+            print("{:d}".format(e), end="")
             count += 1
         except (ValueError, TypeError):
             count2 += 1
