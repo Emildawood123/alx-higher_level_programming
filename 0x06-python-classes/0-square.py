@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" empty class called squre """
+""" empty class called Square """
 class Square:
-    """exaclly empty"""
+    """exaclly empty Square"""
     pass
