@@ -1,5 +1,7 @@
 #!/usr/bin/python3
+"""linked"""
 class Node:
+    """Node"""
     def __init__(self, data, next_node=None):
         self.__data = data
         self.__next_node = next_node
@@ -22,6 +24,7 @@ class Node:
         else:
             raise TypeError("next_node must be a Node object")
 class SinglyLinkedList:
+    """SinglyLinkedList"""
     def __init__(self):
         self.head = None
     def __str__(self):
