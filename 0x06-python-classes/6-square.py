@@ -50,13 +50,10 @@ class Square:
         if s == 0:
             print()
         else:
-            for _ in range(pos[1]):
+            for _ in range(0, pos[1]):
                 print()
             while i < s:
-                c = 0
                 print("{}".format(" " * pos[0]), end="")
-                while c < s:
-                    print("#",end="")
-                    c += 1
+                print("#" * s,end="")
                 print()
                 i += 1
