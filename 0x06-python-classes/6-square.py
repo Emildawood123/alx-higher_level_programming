@@ -45,6 +45,8 @@ class Square:
         if s == 0:
             print()
         else:
+            for _ in range(0, pos[1]):
+                print()
             while i < s:
                 c = 0
                 print("{}".format(" " * pos[0]), end="")
