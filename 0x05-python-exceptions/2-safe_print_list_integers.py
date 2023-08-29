@@ -11,6 +11,6 @@ def safe_print_list_integers(my_list=[], x=0):
         except (ValueError, TypeError):
             count2 += 1
     if (count + count2 < x):
-        raise  IndexError("list index out of range")
+        raise IndexError("list index out of range")
     print("".format())
-    return count
+    return (count)
