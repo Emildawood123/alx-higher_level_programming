@@ -1,12 +1,12 @@
 #!/usr/bin/python3
 """sys moudle"""
 import sys
+"""sys module"""
 if (len(sys.argv) != 2):
     print("Usage: nqueens N")
     exit(1)
 try:
     int(sys.argv[1])
-
 except TypeError:
     print("N must be a number")
     exit(1)
