@@ -1,0 +1,33 @@
+The ``5-text_indentation`` module
+======================
+
+Using ``text_indentation``
+-------------------
+
+This is an text_indentation test file
+First import ``text_indentation`` from the ``5-text_indentation`` module:
+
+    >>> text_indentation = __import__("5-text_indentation").text_indentation
+
+not string:
+    >>> text_indentation(5)
+    Traceback (most recent call last):
+    ...
+    TypeError: text must be a string
+
+full stop:
+    >>> text_indentation("emil dawood. emil")
+    emil dawood.
+    <BLANKLINE>
+    emil
+
+question mark:
+    >>> text_indentation("emil dawood? ")
+    emil dawood?
+    <BLANKLINE>
+
+not string but it's arr:
+    >>> text_indentation([5])
+    Traceback (most recent call last):
+    ...
+    TypeError: text must be a string

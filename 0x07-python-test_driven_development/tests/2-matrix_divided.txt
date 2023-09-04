@@ -1,0 +1,34 @@
+The ``2-matrix_divided`` module
+======================
+
+Using ``matrix_divided``
+-------------------
+
+This is an matrix_divided test file
+First import ``matrix_divided` from the ``2-matrix_divided`` module:
+
+    >>> matrix_divided = __import__("2-matrix_divided").matrix_divided
+
+all integer(matrix) with neg number:
+    >>> matrix_divided([[1, 2, 4], [5, 4 , 2]], -1)
+    [[-1.0, -2.0, -4.0], [-5.0, -4.0, -2.0]]
+
+all integer with pos number:
+    >>> matrix_divided([[1, 2, 4], [5, 4, 2]], 2)
+    [[0.5, 1.0, 2.0], [2.5, 2.0, 1.0]]
+
+all float with pos number:
+    >>> matrix_divided([[1.5, 2.5, 3.5], [4.5, 8.5, 1.5]], 2)
+    [[0.75, 1.25, 1.75], [2.25, 4.25, 0.75]]
+
+all number with string:
+    >>> matrix_divided([[1, 2, 4], [5, 4, 2]], "e")
+    Traceback (most recent call last):
+    ...
+    TypeError: div must be a number
+
+all number with string:
+    >>> matrix_divided([[5], [5, 4, 2]], 5)
+    Traceback (most recent call last):
+    ...
+    TypeError: Each row of the matrix must have the same size
