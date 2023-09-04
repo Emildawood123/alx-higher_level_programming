@@ -1,7 +1,9 @@
 #!/usr/bin/python3
+"""sys moudle"""
+
+
+import sys
 if __name__ == "__main__":
-    import sys
-    """sys module"""
     if (len(sys.argv) != 2):
         print("Usage: nqueens N")
         exit(1)
