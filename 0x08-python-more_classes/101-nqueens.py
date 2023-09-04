@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-"""sys moudle"""
 import sys
 """sys module"""
 if (len(sys.argv) != 2):
