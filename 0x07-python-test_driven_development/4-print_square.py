@@ -1,5 +1,9 @@
 #!/usr/bin/python3
+""" mod """
+
+
 def print_square(size):
+    """any"""
     if type(size) != int:
         raise TypeError("size must be an integer")
     elif (size < 0):
