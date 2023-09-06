@@ -8,3 +8,4 @@ class test(unittest.TestCase):
         self.assertEqual(max_integer([1, 30, 5, 10]), 30)
         self.assertEqual(max_integer([40, 3, 5, 10]), 40)
         self.assertEqual(max_integer([1, 50, 60, 10]), 60)
+        self.assertEqual(max_integer([-1, -2, -3, -4]), -1)
