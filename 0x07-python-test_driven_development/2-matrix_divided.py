@@ -1,5 +1,9 @@
 #!/usr/bin/python3
+""" moudle """
+
+
 def matrix_divided(matrix, div):
+    " : "
     for n in matrix:
         if (type(n) != list):
             raise TypeError("""matrix must be a matrix \
