@@ -4,4 +4,4 @@
 
 def lookup(obj):
     """class"""
-    print(dir(obj))
+    return dir(obj)
