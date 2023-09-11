@@ -4,7 +4,7 @@ The ``1-my_list`` module
 Using ``1-my_list``
 -------------------
 
-This is an add_integer test file
+This is an MyList test file
 First import ``MyList`` from the ``1-my_list`` module:
 
     >>> MyList = __import__("1-my_list").MyList
