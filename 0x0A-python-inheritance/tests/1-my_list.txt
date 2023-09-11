@@ -45,3 +45,10 @@ onther one all of neg:
     >>> my_list.append(-4)
     >>> my_list.print_sorted()
     [-5, -4, -3, -2, -1]
+
+when add arg to print_sorted:
+    >>> my_list = MyList([1, 2, 3, 4, 5])
+    >>> my_list.print_sorted(20)
+    Traceback (most recent call last):
+    ...
+    TypeError: print_sorted() takes 1 positional argument but 2 were given
