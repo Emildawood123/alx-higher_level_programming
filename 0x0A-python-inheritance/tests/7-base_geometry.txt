@@ -24,3 +24,8 @@ forth:
 >>> bg.integer_validator("my_int", [1, 2, 3])
    Traceback (most recent call last):
    TypeError: my_int must be an integer
+
+fifth:
+>>> bg.integer_validator("my_int", 'memo')
+    Traceback (most recent call last):
+    TypeError: my_int must be an integer
