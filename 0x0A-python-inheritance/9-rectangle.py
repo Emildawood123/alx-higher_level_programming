@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """moudle"""
 BaseGeometry = __import__("7-base_geometry").BaseGeometry
+"""moudle"""
 
 
 class Rectangle(BaseGeometry):
