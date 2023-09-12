@@ -2,9 +2,6 @@
 """module"""
 
 
-import json
-
-
 def class_to_json(obj):
     """class"""
-    return (json.dumps(obj))
+    return (obj.__dict__())
