@@ -5,5 +5,4 @@
 def read_file(filename=""):
     """class"""
     with open(filename, "r") as file:
-        read = file.read()
-        print(read)
+        print(file.read())
