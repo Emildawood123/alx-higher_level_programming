@@ -3,6 +3,7 @@
 
 
 def append_after(filename="", search_string="", new_string=""):
+    """def"""
     with open(filename, "a") as file:
         num = 0
         my_list = file.readlines()
