@@ -1,9 +1,10 @@
 #!/usr/bin/python3
-"""class"""
-import csv
+"""modules"""
 import json
 import os
 from turtle import *
+
+"""class"""
 
 
 class Base:
