@@ -5,7 +5,7 @@ from turtle import *
 
 
 class Base:
-    """cls"""
+    """base class"""
     __nb_objects = 0
 
     """defs"""
@@ -18,19 +18,16 @@ class Base:
 
     @staticmethod
     def to_json_string(list_dictionaries):
-        """funcation"""
         if (list_dictionaries is None or len(list_dictionaries) == 0):
             return ("[]")
         return (json.dumps(list_dictionaries))
 
     @staticmethod
     def from_json_string(json_string):
-        """def"""
         return json.loads(json_string)
 
     @classmethod
     def create(cls, **dictionary):
-        """cls method"""
         instance = None
         if cls.__name__ != "Rectangle":
             instance = cls(1)
@@ -41,7 +38,6 @@ class Base:
 
     @classmethod
     def save_to_file(cls, list_objs):
-        """def"""
         name = cls.__name__
         my_list = []
         for n in list_objs:
@@ -51,7 +47,6 @@ class Base:
 
     @classmethod
     def load_from_file(cls):
-        """def"""
         name = cls.__name__
         try:
             with open("{}.json".format(name), "r", encoding="utf-8") as file:
@@ -65,7 +60,6 @@ class Base:
 
     @staticmethod
     def draw(list_rectangles, list_squares):
-        """def"""
         arrow = Turtle()
         arrow.speed(1)
         for rect in list_rectangles:
