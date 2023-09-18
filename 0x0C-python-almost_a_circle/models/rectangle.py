@@ -71,9 +71,11 @@ class Rectangle(Base):
         self.__y = value
 
     def area(self):
+        """height."""
         return self.width * self.height
 
     def display(self):
+        """height."""
         for _ in range(0, self.y):
             print()
         for _ in range(0, self.height):
@@ -81,10 +83,12 @@ class Rectangle(Base):
             print("#" * self.width)
 
     def __str__(self):
+        """height."""
         return ("[{}] ({}) {}/{} - {}/{}".format(__class__.__name__, self.id,
                 self.__x, self.__y, self.__width, self.__height))
 
     def update(self, *args, **kwargs):
+        """height."""
         if args is not None and len(args) > 0:
             for el in range(0, len(args)):
                 if (el == 0):
@@ -102,5 +106,6 @@ class Rectangle(Base):
                 setattr(self, i, kwargs[i])
 
     def to_dictionary(self):
+        """height."""
         return ({'x': self.__x, 'y': self.__y, 'id': 1,
                 'height': self.__height, 'width': self.__width})
