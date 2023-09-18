@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """modules"""
 import json
-import os
 from turtle import *
 
 
@@ -54,15 +53,15 @@ class Base:
     def load_from_file(cls):
         """def"""
         name = cls.__name__
-        if (os.path.exists("{}.json".format(name))):
-            return ([])
-        else:
+        try:
             with open("{}.json".format(name), "r", encoding="utf-8") as file:
                 to_obj = cls.from_json_string(file.read())
                 my_list = []
                 for i in to_obj:
                     my_list.append(cls.create(**i))
                 return (my_list)
+        except FileNotFoundError:
+            return []
 
     @staticmethod
     def draw(list_rectangles, list_squares):
