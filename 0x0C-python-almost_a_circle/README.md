@@ -1,2 +1,1 @@
-#!/usr/bin/python3
-models and inheret
+0x0C-python-almost_a_circle
