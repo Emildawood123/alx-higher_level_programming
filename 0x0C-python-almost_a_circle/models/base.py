@@ -8,6 +8,7 @@ from turtle import *
 
 
 class Base:
+    """defs"""
     __nb_objects = 0
 
     """defs"""
