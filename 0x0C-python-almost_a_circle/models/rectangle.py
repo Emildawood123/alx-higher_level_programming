@@ -1,12 +1,13 @@
 #!/usr/bin/python3
-"""models/rectangle.py"""
+"""class rectangle moudle"""
 
 from models.base import Base
 
 
 class Rectangle(Base):
-    """Class Rectangle"""
+    """rectangle class"""
     def __init__(self, width, height, x=0, y=0, id=None):
+        """height"""
         super().__init__(id)
         self.width = width
         self.height = height
@@ -15,10 +16,12 @@ class Rectangle(Base):
 
     @property
     def width(self):
+        """height"""
         return self.__width
 
     @width.setter
     def width(self, value):
+        """height"""
         if (type(value) != int):
             raise TypeError("width must be an integer")
         elif (value <= 0):
@@ -27,10 +30,12 @@ class Rectangle(Base):
 
     @property
     def height(self):
+        """height"""
         return self.__height
 
     @height.setter
     def height(self, value):
+        """height"""
         if (type(value) != int):
             raise TypeError("height must be an integer")
         elif (value <= 0):
@@ -39,10 +44,12 @@ class Rectangle(Base):
 
     @property
     def x(self):
+        """height"""
         return self.__x
 
     @x.setter
     def x(self, value):
+        """height"""
         if (type(value) != int):
             raise TypeError("x must be an integer")
         elif (value < 0):
@@ -51,10 +58,12 @@ class Rectangle(Base):
 
     @property
     def y(self):
+        """height"""
         return self.__y
 
     @y.setter
     def y(self, value):
+        """height"""
         if (type(value) != int):
             raise TypeError("y must be an integer")
         elif (value < 0):
