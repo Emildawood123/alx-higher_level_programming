@@ -4,11 +4,9 @@ import json
 import os
 from turtle import *
 
-"""class"""
-
 
 class Base:
-    """defs"""
+    """cls"""
     __nb_objects = 0
 
     """defs"""
@@ -28,6 +26,7 @@ class Base:
 
     @staticmethod
     def from_json_string(json_string):
+        """def"""
         return json.loads(json_string)
 
     @classmethod
@@ -43,6 +42,7 @@ class Base:
 
     @classmethod
     def save_to_file(cls, list_objs):
+        """def"""
         name = cls.__name__
         my_list = []
         for n in list_objs:
@@ -52,6 +52,7 @@ class Base:
 
     @classmethod
     def load_from_file(cls):
+        """def"""
         name = cls.__name__
         if (os.path.exists("{}.json".format(name))):
             return ([])
@@ -65,6 +66,7 @@ class Base:
 
     @staticmethod
     def draw(list_rectangles, list_squares):
+        """def"""
         arrow = Turtle()
         arrow.speed(1)
         for rect in list_rectangles:
