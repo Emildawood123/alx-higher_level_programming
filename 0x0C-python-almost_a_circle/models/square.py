@@ -27,6 +27,7 @@ class Square(Rectangle):
         self.height = value
 
     def update(self, *args, **kwargs):
+        """__init__."""
         if args is not None and len(args) > 0:
             for i in range(0, len(args)):
                 if (i == 0):
@@ -42,4 +43,5 @@ class Square(Rectangle):
                 setattr(self, i, kwargs[i])
 
     def to_dictionary(self):
+        """__init__."""
         return ({'id': self.id, 'x': self.x, 'size': self.size, 'y': self.y})
