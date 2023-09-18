@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-"""moudle"""
+"""rectangle class moudle"""
 
 from models.base import Base
 
-"""class"""
+"""rectangle class"""
 
 
 class Rectangle(Base):
