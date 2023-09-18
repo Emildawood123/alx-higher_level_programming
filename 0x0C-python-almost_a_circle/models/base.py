@@ -21,6 +21,7 @@ class Base:
 
     @staticmethod
     def to_json_string(list_dictionaries):
+        """funcation"""
         if (list_dictionaries is None or len(list_dictionaries) == 0):
             return ("[]")
         return (json.dumps(list_dictionaries))
@@ -31,6 +32,7 @@ class Base:
 
     @classmethod
     def create(cls, **dictionary):
+        """cls method"""
         instance = None
         if cls.__name__ != "Rectangle":
             instance = cls(1)
