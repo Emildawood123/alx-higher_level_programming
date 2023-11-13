@@ -1,6 +1,6 @@
 #!/usr/bin/node
-first = process.argv[2];
-second = process.argv[3];
+const first = process.argv[2];
+const second = process.argv[3];
 if (process.argv.length < 4) {
   console.log(NaN);
 } else {
