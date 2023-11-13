@@ -7,5 +7,5 @@ if (len < 4) {
   for (let i = 2; i < len; i++) {
     arr.push(parseInt(process.argv[i]));
   }
-  console.log(Math.max(...arr));
+  console.log(arr.sort()[arr.length - 2]);
 }
