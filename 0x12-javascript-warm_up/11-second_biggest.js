@@ -1,5 +1,5 @@
 #!/usr/bin/node
-const len = process.argv.length
+const len = process.argv.length;
 if (len < 4) {
   console.log(0);
 } else {
