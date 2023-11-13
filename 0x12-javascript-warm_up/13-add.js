@@ -1,5 +1,4 @@
 #!/usr/bin/node
-export function add(first, second) {
-  const sum = first + second;
-  return (sum);
-}
+exports.add = function(first, second) {
+  return first + second;
+};
