@@ -12,7 +12,7 @@ if __name__ == "__main__":
         port=3306
     )
     myCursor = dataBase.cursor()
-    myCursor.execute("""SELECT * FROM states WHERE states.name IS '{}'
+    myCursor.execute("""SELECT * FROM states WHERE BINARY name IS '{}'
     ORDER BY ID ASC""".format(re.match("[A-Za-z\\s]+", sys.argv[4])[0]))
     result = myCursor.fetchall()
     for i in result:
