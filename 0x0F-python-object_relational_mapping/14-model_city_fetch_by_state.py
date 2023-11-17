@@ -14,7 +14,7 @@ if __name__ == "__main__":
                            pool_pre_ping=True)
     Session = sessionmaker(bind=engine)
     session = Session()
-    select = session.query(City, State).filter(City.state_id == State.id).all()
+    select = session.query(City, State).filter(City.state_id == State.id).order_by(City.id).all()
     for s in select:
         print("{}: ({}) {}".format(s.State.name, s.City.id, s.state.name))
     session.commit()
