@@ -10,7 +10,11 @@ if __name__ == "__main__":
         port=3306
     )
     myCursor = dataBase.cursor()
-    myCursor.execute("""SELECT * FROM states ORDER BY ID ASC""")
+    command = """SELECT cities.id, cities.name, states.name
+    FROM cities INNER JOIN states ON
+    cities.state_id = states.id
+    ORDER BY cities.id ASC"""
+    myCursor.execute(command)
     result = myCursor.fetchall()
     for i in result:
         print(i)

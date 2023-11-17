@@ -10,7 +10,7 @@ if __name__ == "__main__":
         port=3306
     )
     myCursor = dataBase.cursor()
-    myCursor.execute("""SELECT * FROM states ORDER BY ID ASC""")
+    myCursor.execute("""SELECT * FROM states WHERE states.name LIKE 'N%' ORDER BY ID ASC""")
     result = myCursor.fetchall()
     for i in result:
         print(i)
