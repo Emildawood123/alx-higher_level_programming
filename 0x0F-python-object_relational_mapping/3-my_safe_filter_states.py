@@ -11,11 +11,11 @@ if __name__ == "__main__":
         db=sys.argv[3],
         port=3306
     )
-    command = """SELECT * FROM states WHERE BINARY name = '%s'
-    ORDER BY ID ASC"""
     data = re.match("[A-Za-z\\s]+", sys.argv[4])
+    command = """SELECT * FROM states WHERE BINARY name = '{}'
+    ORDER BY ID ASC""".format(data[0])
     myCursor = dataBase.cursor()
-    myCursor.execute(command, data[0])
+    myCursor.execute(command)
     result = myCursor.fetchall()
     for i in result:
         print(i)
