@@ -23,6 +23,5 @@ if __name__ == "__main__":
     else:
         for i in result:
             print("{}, ".format(i), end='')
-        print(result[-1][0])
     myCursor.close()
     dataBase.close()
