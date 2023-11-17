@@ -12,7 +12,7 @@ if __name__ == "__main__":
     )
     myCursor = dataBase.cursor()
     command = """SELECT * FROM states
-    WHERE name = '{}' ORDER BY ID ASC""".format(sys.argv[4])
+    WHERE BINARY name = '{}' ORDER BY ID ASC""".format(sys.argv[4])
     myCursor.execute(command)
     result = myCursor.fetchall()
     for i in result:

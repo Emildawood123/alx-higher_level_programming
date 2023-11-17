@@ -12,7 +12,7 @@ if __name__ == "__main__":
     )
     myCursor = dataBase.cursor()
     myCursor.execute("""SELECT * FROM states
-    WHERE name LIKE 'N%' ORDER BY ID ASC""")
+    WHERE BINARY name LIKE 'N%' ORDER BY ID ASC""")
     result = myCursor.fetchall()
     for i in result:
         print(i)
