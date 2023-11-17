@@ -17,4 +17,4 @@ if __name__ == "__main__":
     if (len(result)):
         print("Nothing")
     else:
-        print(f"{result[0].id}: {result[0].name}")
+        print(f"{result.id}: {result.name}")
