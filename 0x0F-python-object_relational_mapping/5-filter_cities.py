@@ -18,7 +18,7 @@ if __name__ == "__main__":
     ORDER BY cities.id ASC""".format(sys.argv[4])
     myCursor.execute(command)
     result = myCursor.fetchall()
-    if (len(result) == 0):
+    if (not(result)):
         print()
     else:
         for i in result:
