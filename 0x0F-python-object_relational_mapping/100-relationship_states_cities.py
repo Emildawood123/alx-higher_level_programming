@@ -19,3 +19,4 @@ if __name__ == "__main__":
     state1.cities.append(city1)
     session.add(state1)
     session.commit()
+    session.close()
