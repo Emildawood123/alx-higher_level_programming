@@ -14,7 +14,7 @@ if __name__ == "__main__":
     WHERE BINARY name = '{}'
     ORDER BY ID ASC""".format(sys.argv[4])
     myCursor = dataBase.cursor()
-    myCursor.execute()
+    myCursor.execute(command)
     result = myCursor.fetchall()
     for i in result:
         print(i)
