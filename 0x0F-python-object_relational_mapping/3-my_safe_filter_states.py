@@ -15,7 +15,7 @@ if __name__ == "__main__":
     ORDER BY ID ASC"""
     data = re.match("[A-Za-z\\s]+", sys.argv[4])
     myCursor = dataBase.cursor()
-    myCursor.execute(command, data)
+    myCursor.execute(command, data[0])
     result = myCursor.fetchall()
     for i in result:
         print(i)
