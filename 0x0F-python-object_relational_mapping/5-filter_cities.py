@@ -18,7 +18,11 @@ if __name__ == "__main__":
     ORDER BY cities.id ASC""".format(sys.argv[4])
     myCursor.execute(command)
     result = myCursor.fetchall()
-    for i in result:
-        print(i)
+    if (len(result) == 0):
+        print()
+    else:
+        for i in result:
+            print("{}, ".format(i))
+        print(result[-1][0])
     myCursor.close()
     dataBase.close()
