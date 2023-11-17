@@ -11,8 +11,9 @@ if __name__ == "__main__":
         port=3306
     )
     myCursor = dataBase.cursor()
-    myCursor.execute("""SELECT * FROM states
-    WHERE BINARY name LIKE 'N%' ORDER BY ID ASC""")
+    command = """SELECT * FROM states
+    WHERE BINARY name LIKE 'N%' ORDER BY ID ASC"""
+    myCursor.execute(command)
     result = myCursor.fetchall()
     for i in result:
         print(i)
