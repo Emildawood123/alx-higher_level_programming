@@ -13,6 +13,6 @@ if __name__ == "__main__":
                            pool_pre_ping=True)
     Session = sessionmaker(bind=engine)
     session = Session()
-    select = session.get(id = 2)
+    select = session.get(id=2)
     select.name = "New Mexico"
     session.commit()
