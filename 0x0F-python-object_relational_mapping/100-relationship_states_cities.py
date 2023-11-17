@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""import some"""
+"""import some libraries"""
 
 import sys
 from relationship_state import Base, State
@@ -14,9 +14,9 @@ if __name__ == "__main__":
                            pool_pre_ping=True)
     Session = sessionmaker(bind=engine)
     session = Session()
-    state1 = State(name="California")
-    city1 = City(name="San Francisco", state=state1)
-    state1.cities.append(city1)
-    session.add(state1)
+    s1 = State(name="California")
+    c1 = City(name="San Francisco", state=s1)
+    s1.cities.append(c1)
+    session.add(s1)
     session.commit()
     session.close()
