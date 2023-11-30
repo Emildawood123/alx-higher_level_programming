@@ -2,6 +2,7 @@
 # this funcation for find the peak
 
 def find_peak(list_of_integers):
+    # function
     diff = 0
     if (len(list_of_integers) == 0):
         return None
