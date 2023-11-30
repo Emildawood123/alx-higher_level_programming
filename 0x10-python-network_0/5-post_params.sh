@@ -1,3 +1,3 @@
 #!/bin/bash
 # this for get the size of content body
-curl -s -H "email: test@gmail.com" -H "subject: I will always be here for PLD" -X POST "$1"
+curl -sL -X POST -d "email=test@gmail.com&subject=I will always be here for PLD" "$1"
