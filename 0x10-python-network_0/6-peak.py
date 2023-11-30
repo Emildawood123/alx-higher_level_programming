@@ -4,5 +4,4 @@
 
 def find_peak(list_of_integers):
     """function"""
-    num = sorted(list_of_integers)[-1]
-    return num
+    return sorted(list_of_integers)[-1]
