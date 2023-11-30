@@ -1,8 +1,9 @@
 #!/usr/bin/python3
-# this funcation for find the peak
+"""function"""
+
 
 def find_peak(list_of_integers):
-    # function
+    """function"""
     diff = 0
     if (len(list_of_integers) == 0):
         return None
