@@ -1,3 +1,3 @@
 #!/bin/bash
 # this for get the size of content body
-curl -sI "$1" | grep -i "allow" | cut -d ' ' -f -2
+curl -sI "$1" | grep -i "allow" | awk -F ": " '{print $2}'
