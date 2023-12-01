@@ -7,7 +7,7 @@ if __name__ == '__main__':
     import json
 
     headers = {'Accept': 'application/vnd.github+json',
-               'Authorization':  f'Bearer {sys.argv[2]}',
+               'Authorization':  'Bearer {}'.format(sys.argv[2]),
                'X-GitHub-Api-Version': '2022-11-28'}
     res = requests.get('https://api.github.com/user', headers=headers,)
     try:
