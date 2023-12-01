@@ -1,10 +1,9 @@
 #!/usr/bin/python3
 """add email and show it"""
 if __name__ == "__main__":
-    import urllib.request
-    import urllib.parse
+    from urllib import parse, request
     import sys
     quary_str = {'email': sys.argv[2]}
-    data = urllib.parse.urlencode(quary_str)
-    with urllib.request.urlopen(sys.argv[1], data=data) as url:
+    data = parse.urlencode(quary_str)
+    with request.urlopen(sys.argv[1], data=data) as url:
         print(url.read().decode('utf-8'))
