@@ -3,5 +3,6 @@
 if __name__ == "__main__":
     import requests
     import sys
-    res = requests.post(sys.argv[1], dic={'email': sys.argv[2]})
+    dic = {'email': sys.argv[2]}
+    res = requests.post(sys.argv[1], dic=dic)
     print(res.text)
