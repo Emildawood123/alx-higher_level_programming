@@ -13,7 +13,7 @@ if __name__ == "__main__":
     try:
         string = resp.json()
         if (string):
-            print("[{}}] {}".format(string["id"], string["name"]))
+            print("[{}] {}".format(string["id"], string["name"]))
         else:
             print("No result")
     except Exception:
