@@ -5,7 +5,7 @@ if __name__ == "__main__":
     import sys
     with request.urlopen(sys.argv[1]) as url:
         try:
-            r = url.read()
-            print(r.decode('utf-8'))
+            r = url.read().decode('UTF-8')
+            print(r)
         except error.HTTPError as err:
             print("Error code: {}".format(err.status))

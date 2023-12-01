@@ -6,4 +6,5 @@ if __name__ == "__main__":
     quary_str = {'email': sys.argv[2]}
     data = parse.urlencode(quary_str)
     with request.urlopen(sys.argv[1], data=data) as url:
-        print(url.read().decode('utf-8'))
+        r = url.read().decode('UTF-8')
+        print(r)
