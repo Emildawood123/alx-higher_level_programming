@@ -15,4 +15,4 @@ if __name__ == '__main__':
         if (json_text):
             print('{}'.format(json_text["id"]))
     except json.JSONDecodeError:
-        print('None')
+        print('there is not')
