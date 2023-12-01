@@ -8,4 +8,4 @@ if __name__ == "__main__":
             r = url.read()
             print(r.decode('utf-8'))
         except error.HTTPError as e:
-            print("Error code: {}".format(e.code))
+            print("Error code: {}".format(e.status))
