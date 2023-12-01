@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 """Write a Python script that takes in a URL..."""
-import json
 
 
 if __name__ == "__main__":
@@ -16,5 +15,5 @@ if __name__ == "__main__":
             print("[{}}] {}".format(string.get("id"), string.get("name")))
         else:
             print("No result")
-    except json.JSONDecodeError:
+    except Exception:
         print("Not a valid JSON")
