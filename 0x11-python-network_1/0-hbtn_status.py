@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-import urllib.request
-"""import urllib"""
 if __name__ == "__main__":
+    import urllib.request
+    """import urllib"""
     with urllib.request.urlopen("https://alx-intranet.hbtn.io/status") as url:
         text = url.read()
         print("Body response:")
