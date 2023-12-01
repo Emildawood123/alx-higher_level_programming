@@ -1,10 +1,10 @@
 #!/usr/bin/python3
 """Write a Python script that takes in a URL..."""
 if __name__ == "__main__":
-    import urllib.request
+    from urllib import request, error
     import sys
-    with urllib.request.urlopen(sys.argv[1]) as url:
+    with request.urlopen(sys.argv[1]) as url:
         try:
             print(url.read().decode('utf-8'))
-        except urllib.error.HTTPError as e:
+        except error.HTTPError as e:
             print("Error code: {}".format(e.code))
