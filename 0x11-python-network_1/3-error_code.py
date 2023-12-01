@@ -7,5 +7,5 @@ if __name__ == "__main__":
         try:
             r = url.read()
             print(r.decode('utf-8'))
-        except error.HTTPError as e:
-            print("Error code: {}".format(e.status))
+        except error.HTTPError as err:
+            print("Error code: {}".format(err.status))
