@@ -13,6 +13,6 @@ if __name__ == '__main__':
     try:
         json_text = res.json()
         if (json_text):
-            print('{}'.format(json_text.get("id")))
+            print('{}'.format(json_text["id"]))
     except json.JSONDecodeError:
         print('None')
